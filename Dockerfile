@@ -1,7 +1,7 @@
 FROM gcc:12 AS builder
 
 WORKDIR /app
-COPY numbergame/numbergame.cpp .
+COPY numbergame.cpp .
 
 RUN g++ -o numbergame numbergame.cpp
 
